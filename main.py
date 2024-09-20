@@ -88,9 +88,7 @@ def parseGroup():
     with alive_bar(len(lines)) as bar:
         # count = 0
         for l in lines:
-            # if (count != 0):
-            #     if count % 50 ==0:
-            #      time.sleep(30)
+
             try:
                 response = requests.get('https://api.vk.com/method/wall.get',
                                         params={'access_token': TOKEN_USER,
